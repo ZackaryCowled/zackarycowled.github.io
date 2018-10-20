@@ -10,6 +10,38 @@ ul{
     padding:0;
 }
 
+button{
+    margin:auto;
+    padding-left:20px;
+    padding-right:20px;
+    height:38px;
+    background:#e8491d;
+    border:0;
+    color:#fff;
+}
+
+input{
+    margin:auto;
+    margin-bottom:10px;
+    padding:4px;
+    height:25px;
+    width:250px;
+}
+
+textarea{
+    margin:auto;
+    margin-bottom:10px;
+    padding:4px;
+    height:100px;
+    width:280px;
+}
+
+iframe{
+    width: 1280px;
+    height:720px;
+    margin-top: 10px;
+}
+
 .container{
     width:80%;
     margin:auto;
@@ -33,16 +65,15 @@ header a{
 }
 
 header li{
-    float:left;
     display:inline;
     padding:0 20px 0 20px;
 }
 
-header #branding{
+header #menu{
     float:left;
 }
 
-header #branding h1{
+header #menu h1{
     margin:0;
 }
 
@@ -63,7 +94,7 @@ header a:hover{
 
 #showcase{
     min-height:400px;
-    background:url('../img/showcase.jpg');
+    background:url('showcase.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     text-align:center;
@@ -80,11 +111,11 @@ header a:hover{
     font-size:20px;
 }
 
-#boxes{
+.boxes{
     margin-top:20px;
 }
 
-#boxes .box{
+.boxes .box{
     display:block;
     float:left;
     text-align:center;
@@ -92,12 +123,20 @@ header a:hover{
     padding:10px;
 }
 
-#boxes .box img{
+.boxes .box img{
     width:90px;
 }
 
-#boxes .box p{
+.boxes .box p{
     padding:10px;
+}
+
+#projects{
+    text-align:center;
+}
+
+#contact{
+    text-align:center;
 }
 
 footer{
@@ -109,8 +148,22 @@ footer{
     text-align:center;
 }
 
-@media(max-width: 768px){
-    header #branding, header nav, header nav li, #boxes, #boxes .box{
+@media(max-width:1600px){
+    iframe{
+        width:720px;
+        height:540px;
+    }
+}
+
+@media(max-width:920px){
+    iframe{
+        width:512px;
+        height:288px;
+    }
+}
+
+@media(max-width:768px){
+    header #menu, header nav, header nav li, .boxes, .boxes .box{
         float:none;
         text-align:center;
         width: 100%;
@@ -129,8 +182,22 @@ footer{
     }
 }
 
-@media(max-width: 420px){
-    header #branding, header nav, header nav li, #boxes, #boxes .box{
+@media(max-width:620px){
+    iframe{
+        width:360px;
+        height:240px;
+    }
+}
+
+@media(max-width:450px){
+    iframe{
+        width:240px;
+        height:144px;
+    }
+}
+
+@media(max-width:420px){
+    header #menu, header nav, header nav li, .boxes, .boxes .box{
         float:none;
         text-align:center;
         width: 100%;
@@ -155,5 +222,12 @@ footer{
 
     footer{
         font-size:12px;
+    }
+}
+
+@media(max-width:320px){
+    iframe{
+        width:220px;
+        height:124px;
     }
 }

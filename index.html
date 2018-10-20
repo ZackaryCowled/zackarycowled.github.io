@@ -7,19 +7,19 @@
         <meta name="author" content="Zackary Cowled">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zackary Cowled | Home</title>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <header>
             <div class="container">
-                <div id="branding">
+                <div id="menu">
                     <h1>Zackary Cowled</h1>
                 </div>
                 <nav>
                     <ul>
                         <li class="current"><a href="index.html">HOME</a></li>
-                        <li><a href="projects.html">PROJECTS</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -30,23 +30,63 @@
                 <p>Zackary Cowled is a Unity Game Programmer who specializes in Editor Tool Development and Gameplay Programming.</p>
             </div>
         </section>
-        <section id="boxes">
+        <section class="boxes">
             <div class="container">
                 <div class="box">
-                    <img src="./img/unity-logo.png">
+                    <img src="./unity-logo.png">
                     <h3>Unity</h3>
                     <p>Zackary began using Unity at a young age and now has over a decade of experience using Unity to create interactive games.</p>
                 </div>
                 <div class="box">
-                    <img src="./img/tool-logo.png">
+                    <img src="./tool-logo.png">
                     <h3>Editor Tools</h3>
                     <p>Zackary specializes in creating Unity Editor Tools to increase developer productivity and visualize problems in games.</p>
                 </div>
                  <div class="box">
-                    <img src="./img/gameplay-logo.png">
+                    <img src="./gameplay-logo.png">
                     <h3>Gameplay Programming</h3>
                     <p>Zackary writes efficient and maintainable code in all areas of Gameplay programming and strives to creating the best user experience possible.</p>
                 </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2>Unity Blueprints</h2>
+                <p>Unity Blueprints is a plugin designed for Unity 2017. The plugin gives developers the ability to create custom blueprints that behave similar to Unity scripts during runtime.</p>
+                <iframe src="https://www.youtube.com/embed/" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="boxes">
+            <div class="container">
+                <div class="box">
+                    <img src="./node-logo.png">
+                    <h3>Visual Scripting</h3>
+                    <p>Unity Blueprints allows developers to create interactive content through a node based visual scripting system.</p>
+                </div>
+                <div class="box">
+                    <img src="./inspector-logo.png">
+                    <h3>Blueprint Inspectors</h3>
+                    <p>Unity Blueprints unlike other visual scripting systems exposes variables in the inspector. This allows developers to reuse blueprints increasing productivity.</p>
+                </div>
+                <div class="box">
+                    <img src="./functions-logo.png">
+                    <h3>Blueprint Functions</h3>
+                    <p>Unity Blueprints allows developers to call blueprints from inside a blueprint following the rules of encapsulation ultimately improving readability.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Let's Work Together!</h2>
+                <p>Is your studio using Unity to create interactive applications? Tell me about what you're working on, let's start developing today!</p>
+                <form method="POST" action="https://formspree.io/zackarycowled10010@gmail.com">
+                    <input name="_next" value="https://zackarycowled.github.io" type="hidden">
+                    <input type="hidden" name="_format" value="plain">
+                    <input name="email" placeholder="Your email" type="email" maxlength="48" required><br/>
+                    <textarea name="message" placeholder="Your message" maxlength="2048" required></textarea><br/>
+                    <input type="text" name="_gotcha" style="display:none">
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </section>
         <footer>
